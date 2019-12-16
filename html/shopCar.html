@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/shopCar.css">
+    <link rel="shortcut icon" href="../img/indexImg/timg.jpg" />
+    <title>购物车</title>
+</head>
+<body>
+        <nav id="nav">
+            <div class="nav-logo">
+                <img src="../img/indexImg/u3.png" alt="LOGO">
+            </div>
+            <ul class="nav-list">
+                <li class="content-li "><a href="./index.html">首页</a> </li>
+                <li class="content-li"><a href="./shopMall.html">优选商城</a> </li>
+                <li class="content-li newCenter">
+                    <a href="javascript:;">企业文化</a> 
+                    <div class="slideDown">
+                        <p><a href="./idea.html">公司理念 </a></p>
+                        <p><a href="./culture.html">公司文化</a></p>
+                        <p><a href="./atmosphere.html">公司氛围</a></p>
+                    </div>
+                </li>
+                <li class="content-li"><a href="./aboutUs.html">关于我们</a> </li>
+                <li class="content-li actived"><a href="javascript:;">我的购物车</a> </li>
+                <li class="content-li"><a href="./kefu.html">客服热线</a> </li>
+                <li class="content-li"><a href="javascript:;" id="checkLogin" style="color: #000;">登录</a> </li>
+                <div class="exitLogin" style="display: none;">
+                    <a href="javascript:;">退出登录</a>
+                </div>
+            </ul>
+        </nav>
+        <div class="shopCar">
+            <h2><a href="./index.html">首页</a>&nbsp;<i>/</i>&nbsp;<a href="javascript:;" style="color: #111;">购物车</a></h2>
+            <table class="shopList"> 
+                <thead>
+                    <tr>
+                        <td class="index">#</td>
+                        <td class="pic">商品图片</td>
+                        <td class="title">商品标题</td>
+                        <td class="price">商品价格</td>
+                        <td class="count">商品数量</td>
+                        <td class="control">操作</td>
+                    </tr>
+                </thead>
+                <tbody class="showList">
+                   
+                </tbody>
+                <tbody id="itemHtml" style="display: none;" >
+                    <tr>
+                        <td class="index">
+                            <input type="checkbox" checked class="checked">
+                        </td>
+                        <td class="pic">
+                            <img src="../img/indexImg/goods12.jpg" alt="">
+                        </td>
+                        <td class="title">$title$</td>
+                        <td class="price">$price$</td>
+                        <td class="count">
+                           <span class="showData">x <span class="countNum">1</span></span> 
+                           <span class="activeCount" style="display: none;">
+                               <button id="cut">-</button>
+                               <input type="number" value="1">
+                               <button id="plus">+</button>
+                           </span>
+                        </td>
+                        <td class="control">
+                            <a href="javascript:;" class="edit">编辑</a>
+                            <a href="javascript:;" class="delete">删除</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- 总计 -->
+            <div class="calcSum">
+                   <div class="desc">共计<span class="totalCount">4</span>件商品</div>
+                   <div class="money">
+                       总计：￥
+                       <span class="totalMoney">1000.00</span>
+                   </div>
+                   <button class="buyNow">立即下单</button> 
+            </div>
+            <div class="noData" style="display: none;">
+                <img src="../img/shopCar/noData.jpg" alt="">
+                您还没有添加商品哦~赶快去选购吧
+            </div>
+        </div>
+
+
+
+
+
+        <footer></footer>
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/shopCar.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+$(function(){
+    //点击提交
+    $('.submit').click(function(){
+        alert('提交成功')
+        window.location.href="../html/index.html"
+    })
+      //点击重置
+      $('.reset').click(function(){
+        window.location.href="../html/aboutUs.html"
+    })
+})

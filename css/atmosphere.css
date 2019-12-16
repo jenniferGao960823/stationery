@@ -1,0 +1,57 @@
+#nav{
+    background-color: #000;
+}
+#nav a{
+    color: #fff;
+}
+.content{
+    width: 780px;
+    padding: 70px 160px 220px 160px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.content .title{
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    line-height: 60px;
+    font-size: 54px;
+    color: #311759;
+}
+.content>h2{
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    letter-spacing: 6px;
+    color: #311759;
+    font-weight: normal;
+}
+.title_list{
+    width: 100%;
+    height: 60px;
+    background: url(../img/newCenter/pen_line_long.png) no-repeat 0 58px;
+    font-size: 30px;
+    color: #311759;
+    position: relative;
+}
+#articleTitle{
+    font-style: normal;
+    text-decoration: none;
+}
+.title_list>span{
+    position: absolute;
+    width: 61px;
+    height: 58px;
+    top: 0;
+    right: 7px;
+    background: url(../img/newCenter/pen_article.png) no-repeat;
+    cursor: pointer;
+}
+.title_list>span:hover{
+    background-position: -61px 0;
+}
+#content p{
+    line-height: 30px;
+    font-size: 18px;
+}

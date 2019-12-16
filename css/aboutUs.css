@@ -1,0 +1,75 @@
+#nav{
+    background-color: #000;
+}
+#nav a{
+    color: #fff;
+}
+.writeSmt{
+    width: 1000px;
+    margin:20px auto;
+    height: 600px;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px #ccc;
+}
+.writeSmt .pic{
+    width: 200px;
+    height: 500px;
+    float: left;
+}
+.writeSmt .pic img{
+    width: 100%;
+    height: 100%;
+    border-right: 1px solid #ccc;
+}
+.writeSmt h2{
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+.writeSmt h2 a{
+    color: #333;
+}
+.right{
+    width: 750px;
+    height: 500px;
+    text-align: left;
+    padding-left: 30px;
+    float: right;
+}
+.right p{
+    line-height: 30px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #666;
+}
+form{
+    width: 100%;
+    font-size: 16px;
+    color: #333;
+}
+form .username{
+    line-height: 30px;
+    width: 200px;
+    text-indent: 1em;
+}
+textarea{
+    text-indent: 1em;
+    line-height: 30px;
+}
+.content span{
+    vertical-align: top;
+}
+.submit,.reset{
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+.submit{
+    margin-left: 150px;
+}

@@ -1,0 +1,278 @@
+
+.swiper-container{
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.swiper-wrapper{
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+.swiper-slide{
+    width: 33.33%;
+    height: 100%;
+}
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-container{
+    position: relative;
+--swiper-theme-color: #ff6600;
+--swiper-pagination-color: #00ff33;/* 两种都可以 */
+--swiper-theme-color: #ff6600;/* 设置Swiper风格 */
+--swiper-navigation-color: #00ff33;/* 单独设置按钮颜色 */
+--swiper-navigation-size: 30px;/* 设置按钮大小 */
+}
+.swiper-pagination{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    height: 5%;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -10%;
+    z-index: 999;
+}
+.swiper-pagination span{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+.swiper-pagination-bullet{
+    background-color: #fff;
+}
+.swiper-pagination-bullet-active{
+    background-color: #00ff33;
+}
+.contentOne{
+    width:100%;
+    height: 700px;
+}
+.contentOne img{
+    width: 100%;
+    height: 100%;
+}
+.contentTwo{
+    width: 100%;
+    height: 520px;
+}
+.contentTwo img{
+    width: 100%;
+    height: 100%;;
+}
+.contentThree{
+    width: 100%;
+    height: 580px;
+    background-image: url(../img/indexImg/u14.png);
+    background-size: 100% 100%;
+    background-position: center;
+    position: relative;
+}
+.coreBussiness{
+    width: 1200px;
+    height: 400px;
+    background-color: #ccc;
+    border-radius: 20px;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    margin-left: -600px;
+}
+.coreBussiness ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.coreBussiness ul li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.coreBussiness button{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 50%;
+    margin-top:-35px;
+    z-index: 999;
+    border: 0;
+    background: none;
+    background-image: url(../img/indexImg/u16.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.coreBussiness #prev{
+    left: 10px;
+}
+.coreBussiness #next{
+    right: 10px;
+    transform: rotate(180deg);
+}
+.contentFour{
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/indexImg/u21.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.lowerPrice{
+    width: 1200px;
+    height: 200px;
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin-left: -600px;
+}
+.addCrt{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+.addCrt.first{
+    left:150px;
+}
+.addCrt.second{
+    left:445px;
+}
+.addCrt.third{
+    right:325px;
+}
+.addCrt.four{
+    right:30px;
+}
+
+aside #shopCart{
+    display: block;
+    position: fixed;
+    z-index: 999;
+    bottom: 150px;
+    right: 25px;
+    background-image: url(../img/indexImg/u19.svg);
+    background-size: 100%;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+/*登录注册弹窗*/
+.loginModel{
+    display: none;
+    position: fixed;
+    width: calc(100%);
+    height: calc(100%);
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.7);
+}
+.loginWraper{
+    position: absolute;
+    width: 550px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-image: url(../img/indexImg/u32.png);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.closeBtn{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    right: 15px;
+    top: 15px;
+    z-index: 999;
+    font-size: 30px;
+    color: #EB2636;
+}
+#toLogin{
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 42px;
+    right: 209px;
+    z-index: 999;
+    cursor: pointer;
+}
+#toResister{
+    width: 53px;
+    height: 30px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    z-index: 999;
+    cursor: pointer;
+}
+#loginUser,#resisterUser{
+    position: absolute;
+    border: none;
+    background-color: #fff;
+    text-indent: 5px;
+    width: 200px;
+    height: 23px;
+    top: 100px;
+    right: 40px;
+    z-index: 999;
+}
+#resisterUser{
+    display: none;
+}
+#loginpsd,#resisterpsd{
+    position: absolute;
+    border: none;
+    background-color: #fff;
+    text-indent: 5px;
+    width: 200px;
+    height: 23px;
+    top: 142px;
+    right: 40px;
+    z-index: 999;
+}
+#resisterpsd{
+    display: none;
+}
+.loginBtn,.resisterBtn{
+    width: 195px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    bottom: 128px;
+    right: 40px;
+    background: #FB8847;
+    z-index: 999;
+    border-radius: 1px;
+    cursor: pointer;
+}
